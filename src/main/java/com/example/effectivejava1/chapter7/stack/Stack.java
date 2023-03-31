@@ -43,6 +43,4 @@ public class Stack {
 //        elements[size] = null;
 //        return result;
 //    }
-
-
 }

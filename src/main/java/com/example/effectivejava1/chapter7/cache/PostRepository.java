@@ -40,6 +40,4 @@ public class PostRepository {
     public Map<CacheKey, Post> getCache() {
         return cache;
     }
-
-
 }
