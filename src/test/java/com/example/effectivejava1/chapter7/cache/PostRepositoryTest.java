@@ -31,6 +31,29 @@ class PostRepositoryTest {
         Thread.sleep(3000L);
 
         assertTrue(postRepository.getCache().isEmpty());
+
+        ArrayList<Object> objects = new ArrayList<>();
+        objects.add(1);
+        objects.remove(1);
+    }
+
+    // 사라지지 않음. ReferenceType은 Constant Pool에 Strong Reference로 존재함.
+    @Test
+    void cacheWithReferenceType() throws InterruptedException {
+        PostRepositoryWithReference postRepositoryWithReference = new PostRepositoryWithReference();
+        Integer key = 1;
+
+        postRepositoryWithReference.getPostById(key);
+
+        assertFalse(postRepositoryWithReference.getCache().isEmpty());
+
+        key = null;
+        System.out.println("run gc");
+        System.gc();
+        System.out.println("wait");
+        Thread.sleep(3000L);
+
+        assertTrue(postRepositoryWithReference.getCache().isEmpty());
     }
 
     @Test

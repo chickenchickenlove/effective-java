@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ChannelTest {
+public class ChannelTest {
 
     @Test
     void npeTest() {
@@ -23,5 +23,4 @@ class ChannelTest {
         Optional<MemberShip> optional = channel.defaultMemberShipWithOptional();
         optional.ifPresent(MemberShip::hello);
         }
-    }
 }
