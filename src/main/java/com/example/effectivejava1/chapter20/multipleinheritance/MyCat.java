@@ -1,5 +1,7 @@
 package com.example.effectivejava1.chapter20.multipleinheritance;
 
+// 인터페이스인 Flyable을 구현하도록 함.
+// Flyable의 구현체인 MyFlyable을 내부 클래스로 가지고, 이 클래스를 통해 fly를 deligate함.
 public class MyCat extends AbstractCat implements Flyable{
 
     private MyFlyable myFlyable = new MyFlyable();
