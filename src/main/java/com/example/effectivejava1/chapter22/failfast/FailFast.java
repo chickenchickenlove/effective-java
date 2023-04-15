@@ -30,7 +30,7 @@ public class FailFast {
 
         // 이터레이터의 remove 사용하기
         // Exception 발생 X
-        for (Iterator<Integer> iterator = numberList.iterator(); iterator.hasNext();) {
+        for (Iterator<Integer> iterator = numberList.iterator(); iterator.hasNext(); ) {
             Integer integer = iterator.next();
             if (integer == 3) {
                 iterator.remove();
