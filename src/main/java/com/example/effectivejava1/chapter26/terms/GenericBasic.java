@@ -1,4 +1,4 @@
-package com.example.effectivejava1.chapter26;
+package com.example.effectivejava1.chapter26.terms;
 
 import java.util.ArrayList;
 import java.util.List;
