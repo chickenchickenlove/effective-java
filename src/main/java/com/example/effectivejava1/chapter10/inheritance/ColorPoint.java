@@ -1,7 +1,7 @@
 package com.example.effectivejava1.chapter10.inheritance;
 
 import com.example.effectivejava1.chapter10.Color;
-import com.example.effectivejava1.chapter14.iteritance.Point;
+import com.example.effectivejava1.chapter10.Point;
 
 // Point에 값 컴포넌트(color)를 추가 (56쪽)
 public class ColorPoint extends Point {

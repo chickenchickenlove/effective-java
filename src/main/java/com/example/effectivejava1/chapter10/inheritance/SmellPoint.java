@@ -1,6 +1,7 @@
 package com.example.effectivejava1.chapter10.inheritance;
 
-import com.example.effectivejava1.chapter14.iteritance.Point;
+
+import com.example.effectivejava1.chapter10.Point;
 
 public class SmellPoint extends Point {
 
